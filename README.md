@@ -11,7 +11,7 @@ Configuration is done inside the [VANITIES.ts](VANITIES.ts) file.
 Update the worker using Wrangler:
 
 ```bash
-$ npm deploy
+$ npm run deploy
 ```
 
 ## Contributing
