@@ -20,11 +20,19 @@ export const MAX_AGE = 86_400;
 export const MODULES: Module[] = [
   /** Example:
    * {
-   *  dir: "https://github.com/n1c00o/foo{/dir}",
-   *  file: "https://github.com/n1c00o/foo{/dir}/{file}#L{line}",
+   *  dir: "https://github.com/n1c00o/foo/tree/master{/dir}",
+   *  file: "https://github.com/n1c00o/foo/blob/master{/dir}/{file}#L{line}",
    *  prefix: "foo",
    *  repo: "https://github.com/n1c00o/foo.git",
    *  svn: "git"
    * }
    */
+	// https://github.com/n1c00o/go-foo
+	{
+		dir: "https://github.com/n1c00o/go-foo/tree/master{/dir}",
+		file: "https://github.com/n1c00o/go-foo/blob/master{/dir}/{file}#L{line}",
+		prefix: "foo",
+		repo: "https://github.com/n1c00o/go-foo.git",
+		svn: "git"
+	}
 ];
