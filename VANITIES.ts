@@ -27,12 +27,12 @@ export const MODULES: Module[] = [
    *  svn: "git"
    * }
    */
-	// https://github.com/n1c00o/go-foo
+	// https://github.com/n1c00o/foo-go
 	{
-		dir: "https://github.com/n1c00o/go-foo/tree/master{/dir}",
-		file: "https://github.com/n1c00o/go-foo/blob/master{/dir}/{file}#L{line}",
+		dir: "https://github.com/n1c00o/foo-go/tree/master{/dir}",
+		file: "https://github.com/n1c00o/foo-go/blob/master{/dir}/{file}#L{line}",
 		prefix: "foo",
-		repo: "https://github.com/n1c00o/go-foo.git",
+		repo: "https://github.com/n1c00o/foo-go.git",
 		svn: "git"
 	}
 ];
