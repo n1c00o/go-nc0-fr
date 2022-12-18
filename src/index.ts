@@ -81,7 +81,7 @@ export default {
 	async fetch(req: Request): Promise<Response> {
 		const pathname = new URL(req.url).pathname;
 
-		if (pathname === "/") {
+		if (pathname === "/")
 			// Index page, a list of all registered modules.
 			return new Response(computeIndexTemplate(MODULES), {
 				status: 200,
@@ -90,9 +90,9 @@ export default {
 					"Cache-Control": `public,max-age=${MAX_AGE}`,
 				},
 			});
-		}
+		
 		// A module page.
-		const mds = MODULES.filter((v) => v.prefix === `/${pathname}`);
+		const mds = MODULES.filter((v) => `/${v.prefix}` === pathname);
 		if (mds.length === 0)
 			return new Response(null, {
 				status: 404,
