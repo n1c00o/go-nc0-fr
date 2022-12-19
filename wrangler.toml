@@ -1,6 +1,0 @@
-name = "go_nc0_fr"
-main = "src/index.ts"
-compatibility_date = "2022-12-18"
-routes = [
-	{ pattern = "go.nc0.fr", custom_domain = true, zone_name = "nc0.fr" }
-]

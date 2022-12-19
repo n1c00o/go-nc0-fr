@@ -1,0 +1,25 @@
+name: Deploy
+on:
+  workflow_dispatch:
+    branches:
+      - master
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    name: Deploy
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-go@v3
+        with:
+          go-version: "1.19.4"
+      - name: Build
+        run: go run cmd/gen/main.go -verbose -input=CONFIG.yml -output=build
+      # https://developers.cloudflare.com/pages/how-to/use-direct-upload-with-continuous-integration/
+      - name: Publish
+        uses: cloudflare/pages-action@1
+        with:
+          apiToken: ${{ secrets.CF_API_TOKEN }}
+          accountId: ${{ secrets.CF_ACCOUNT_ID }}
+          projectName: go-nc0-fr
+          directory: build
+          gitHubToken: ${{ secrets.GITHUB_TOKEN }}

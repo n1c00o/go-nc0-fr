@@ -1,0 +1,10 @@
+# Configuration for the generator.
+# See documentation for keys inside pkg/config/config.go
+hostname: go.nc0.fr
+modules:
+  # https://go.nc0.fr/foo -> https://github.com/n1c00o/foo-go
+  - prefix: foo
+    dir: "https://github.com/n1c00o/foo-go/tree/master{/dir}"
+    file: "https://github.com/n1c00o/foo-go/blob/master{/dir}/{file}#L{line}"
+    repo: "https://github.com/n1c00o/foo-go.git"
+    vcs: git
