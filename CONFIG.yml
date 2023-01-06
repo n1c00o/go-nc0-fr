@@ -20,3 +20,9 @@ modules:
     file: "https://github.com/n1c00o/repository/blob/master{/dir}/{file}#L{line}"
     repo: "https://github.com/n1c00o/repository.git"
     vcs: git
+  # https://go.nc0.fr/feur_bot -> https://github.com/n1c00o/feur_bot
+  - prefix: repository
+    dir: "https://github.com/n1c00o/feur_bot/tree/master{/dir}"
+    file: "https://github.com/n1c00o/feur_bot/blob/master{/dir}/{file}#L{line}"
+    repo: "https://github.com/n1c00o/feur_bot.git"
+    vcs: git
