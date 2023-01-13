@@ -26,3 +26,9 @@ modules:
     file: "https://github.com/n1c00o/feur_bot/blob/master{/dir}/{file}#L{line}"
     repo: "https://github.com/n1c00o/feur_bot.git"
     vcs: git
+  # https://go.nc0.fr/choochoo -> https://github.com/n1c00o/choochoo
+  - prefix: choochoo
+    dir: "https://github.com/n1c00o/choochoo/tree/master{/dir}"
+    file: "https://github.com/n1c00o/choochoo/blob/master{/dir}/{file}#L{line}"
+    repo: "https://github.com/n1c00o/choochoo.git"
+    vcs: git
