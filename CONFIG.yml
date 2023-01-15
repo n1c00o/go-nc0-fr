@@ -8,11 +8,11 @@ modules:
     file: "https://github.com/n1c00o/foo-go/blob/master{/dir}/{file}#L{line}"
     repo: "https://github.com/n1c00o/foo-go.git"
     vcs: git
-  # https://go.nc0.fr/rozoe -> https://github.com/rozoe/rozoe
+  # https://go.nc0.fr/rozoe -> https://github.com/n1c00o/rozoe
   - prefix: rozoe
-    dir: "https://github.com/rozoe/rozoe/tree/master{/dir}"
-    file: "https://github.com/rozoe/rozoe/blob/master{/dir}/{file}#L{line}"
-    repo: "https://github.com/rozoe/rozoe.git"
+    dir: "https://github.com/n1c00o/rozoe/tree/master{/dir}"
+    file: "https://github.com/n1c00o/rozoe/blob/master{/dir}/{file}#L{line}"
+    repo: "https://github.com/n1c00o/rozoe.git"
     vcs: git
   # https://go.nc0.fr/repository -> https://github.com/n1c00o/repository
   - prefix: repository
