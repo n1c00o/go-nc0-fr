@@ -14,27 +14,21 @@ modules:
     file: "https://github.com/n1c00o/rozoe/blob/master{/dir}/{file}#L{line}"
     repo: "https://github.com/n1c00o/rozoe.git"
     vcs: git
-  # https://go.nc0.fr/repository -> https://github.com/n1c00o/repository
-  - prefix: repository
-    dir: "https://github.com/n1c00o/repository/tree/master{/dir}"
-    file: "https://github.com/n1c00o/repository/blob/master{/dir}/{file}#L{line}"
-    repo: "https://github.com/n1c00o/repository.git"
-    vcs: git
   # https://go.nc0.fr/feur_bot -> https://github.com/n1c00o/feur_bot
   - prefix: feur_bot
     dir: "https://github.com/n1c00o/feur_bot/tree/master{/dir}"
     file: "https://github.com/n1c00o/feur_bot/blob/master{/dir}/{file}#L{line}"
     repo: "https://github.com/n1c00o/feur_bot.git"
     vcs: git
-  # https://go.nc0.fr/choochoo -> https://github.com/n1c00o/choochoo
-  - prefix: choochoo
-    dir: "https://github.com/n1c00o/choochoo/tree/master{/dir}"
-    file: "https://github.com/n1c00o/choochoo/blob/master{/dir}/{file}#L{line}"
-    repo: "https://github.com/n1c00o/choochoo.git"
-    vcs: git
   # https://go.nc0.fr/clawflake -> https://github.com/n1c00o/clawflake
   - prefix: clawflake
     dir: "https://github.com/n1c00o/clawflake/tree/master{/dir}"
     file: "https://github.com/n1c00o/clawflake/blob/master{/dir}/{file}#L{line}"
     repo: "https://github.com/n1c00o/clawflake.git"
+    vcs: git
+  # https://go.nc0.fr/github-random -> https://github.com/n1c00o/github-random
+  - prefix: clawflake
+    dir: "https://github.com/n1c00o/github-random/tree/master{/dir}"
+    file: "https://github.com/n1c00o/github-random/blob/master{/dir}/{file}#L{line}"
+    repo: "https://github.com/n1c00o/github-random.git"
     vcs: git
