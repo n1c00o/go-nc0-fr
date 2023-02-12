@@ -27,7 +27,7 @@ modules:
     repo: "https://github.com/n1c00o/clawflake.git"
     vcs: git
   # https://go.nc0.fr/github-random -> https://github.com/n1c00o/github-random
-  - prefix: clawflake
+  - prefix: github-random
     dir: "https://github.com/n1c00o/github-random/tree/master{/dir}"
     file: "https://github.com/n1c00o/github-random/blob/master{/dir}/{file}#L{line}"
     repo: "https://github.com/n1c00o/github-random.git"
